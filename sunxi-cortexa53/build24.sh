@@ -1,4 +1,5 @@
 #!/bin/bash
+sed -i 's#https://downloads.immortalwrt.org#https://mirrors.pku.edu.cn/immortalwrt#g' repositories.conf
 source shell/custom-packages.sh
 echo "第三方软件包: $CUSTOM_PACKAGES"
 # yml 传入的路由器型号 PROFILE
