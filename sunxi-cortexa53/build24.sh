@@ -52,6 +52,16 @@ PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 PACKAGES="$PACKAGES luci-app-openclash"
 PACKAGES="$PACKAGES luci-i18n-homeproxy-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
+
+# =======================================================
+# [新增] GPIO 支持 (适配 ImmortalWrt 24.10 / libgpiod v2)
+# =======================================================
+PACKAGES="$PACKAGES libgpiod gpiod-tools"
+PACKAGES="$PACKAGES python3 python3-gpiod"
+PACKAGES="$PACKAGES kmod-gpio-button-hotplug"
+# 如果你需要 vim 和 htop 也可以加在这里
+PACKAGES="$PACKAGES vim htop"
+
 # ======== shell/custom-packages.sh =======
 # 合并imm仓库以外的第三方插件
 PACKAGES="$PACKAGES $CUSTOM_PACKAGES"
